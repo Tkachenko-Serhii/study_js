@@ -529,13 +529,13 @@ name - имя для проверки вхождения в полное имя.
 /*Функция checkForSpam(message) принимает строку (параметр message), проверяет её на содержание запрещенных слов spam и sale, и возвращает результат проверки. Слова в строке параметра message могут быть в произвольном регистре, например SPAM или sAlE.
 Если нашли запрещенное слово (spam или sale) то функция возвращает буль true.
 Если в строке нет запрещенных слов, функция возвращает буль false.*/
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-  const messageToLowerCase = message.toLowerCase();
-  result =
-    messageToLowerCase.includes('spam') || messageToLowerCase.includes('sale');
-  // Change code above this line
-  return result;
-}
-console.log(checkForSpam('[Sale] How to earn fast money?'));
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   const messageToLowerCase = message.toLowerCase();
+//   result =
+//     messageToLowerCase.includes('spam') || messageToLowerCase.includes('sale');
+//   // Change code above this line
+//   return result;
+// }
+// console.log(checkForSpam('[Sale] How to earn fast money?'));
