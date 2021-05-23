@@ -109,4 +109,73 @@ lastElement	Значение последнего элемента массив�
 // console.log(splitMessage('Mango hurries to the train', ' '));
 
 //ex.11
-/*
+/*Сервису гравировки украшений нужна функция, которая бы автоматически считала цену гравировки, в зависимости от количества слов и цены за слово.
+Объявлена функция calculateEngravingPrice(message, pricePerWord). Эта функция принимает строку, состоящую из слов разделённых только пробелами (параметр message) и цену гравировки одного слова (параметр pricePerWord).
+Напиши тело функции, чтобы она возвращала общую стоимость гравировки всех слов в строке.*/
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const sum = message.split(' ').length * pricePerWord;
+//   return sum;
+// }
+// console.log(calculateEngravingPrice('Web-development is creative work', 40));
+
+//ex.12
+/*Дополни код функции makeStringFromArray(array, delimeter) так, чтобы она возвращала в переменной string результат соединения элементов массива array c разделителем delimeter - строку.*/
+
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   string = array.join(delimeter);
+//   return string;
+// }
+// console.log(
+//   makeStringFromArray(['Mango', 'hurries', 'to', 'the', 'train'], ' '),
+// );
+
+//ex.13
+/*Напиши функцию slugify(title) которая принимает заголовок статьи, параметр title, и возвращает slug, созданный из этой строки.
+Значением параметра title будут строки, слова которых разделены только пробелами
+Все символы slug должны быть в нижнем регистре
+Все слова slug должна быть разделены тире*/
+
+// function slugify(title) {
+//   let string;
+//   string = title.split(' ').join('-').toLowerCase();
+//   return string;
+// }
+// console.log(slugify('How to become a JUNIOR developer in TWO WEEKS'));
+
+//ex.14
+/*Дополни код так, чтобы переменные содержали частичные копии исходного массива fruits.
+firstTwoEls - массив из первых двух элементов
+nonExtremeEls - массив из всех элементов кроме первого и последнего
+lastThreeEls - массив из трёх последних элементов*/
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(-3);
+// console.log(firstTwoEls, nonExtremeEls, lastThreeEls);
+
+//ex.15
+/*Дополни код так, чтобы в переменной allClients получился массив всех элементов массивов oldClients и newClients.*/
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+// const allClients = oldClients.concat(newClients);
+// console.log(allClients);
+
+//ex.16
+/*Напиши функцию makeArray(firstArray, secondArray, maxLength) для создания нового массива со всеми элементами двух исходных firstArray и secondArray. Параметр maxLength содержит максимально допустимую длину нового массива.
+Если количество элементов нового массива больше maxLength, функция должна вернуть копию массива длиной maxLength элементов. В противном случае функция должна вернуть новый массив целиком.*/
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   let array;
+
+//   array = firstArray.concat(secondArray);
+//   if (array.length > maxLength) {
+//     array = array.slice(0, maxLength);
+//     return array;
+//   }
+//   return array;
+// }
+// console.log(makeArray(['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 5));
